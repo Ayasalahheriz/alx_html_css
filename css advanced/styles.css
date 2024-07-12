@@ -396,6 +396,7 @@
     background-color: var(--dark-blue);
     color: var(--white);
     padding: var(--padding);
+    text-align: center;
   }
   
   /* Background Styling */
@@ -412,11 +413,10 @@
   .social-media {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 18px;
-    position: absolute;
-    left: 165px;
-    top: 95px;
+    padding-top: 60px;
+    padding-bottom: 100px;
   }
   
   /* Logo Image Styling */
@@ -426,11 +426,11 @@
   }
   
   /* Social Media Icons Styling */
-  /* .SocialIcons {
+  .SocialIcons {
     display: flex;
     gap: 15px;
     align-items: left;
-  } */
+  } 
   
   .social-icon {
     margin-left: 20px;
@@ -446,10 +446,6 @@
   
   /* Text Styling */
   .Smileschool2020 {
-    position: relative;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -459,18 +455,6 @@
   }
   
   /* Additional Styling for the Footer */
-  footer {
-    position: relative;
-    background: #071629;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  footer section {
-    position: relative;
-  }
-  
   footer img {
     max-width: 100px; /* Adjust the size of the logo as needed */
   }
