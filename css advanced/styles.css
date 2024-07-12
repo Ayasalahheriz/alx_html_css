@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  /* font */
+  @font-face {
+    font-family: 'source sans pro'; 
+    src: url('fonts/SourceSansPro-Light.otf'); 
+  }
+  /* variables */
+  :root {
+    --purple:#C271FF;
+    --white:#FFFFFF;
+    --dark-blue:#071629;
+    --padding:20px 120px 50px 120px;
+  }
+  
+  /* header and first section */
+  .header-background{
+    background-image: url(images/Object.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    padding: var(--padding);
+    height: 1093px;
+  }
+  /* header */
+  header{
+    margin-bottom: 150px;
+  }
+  header>nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  nav ul li a{
+    text-decoration: none;
+    padding-left: 25px;
+    color: var(--white);
+  }
+  /* first section */
+  .head{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 150px;
+  }
+  .head h1{
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+  }
+  .head div {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .head div span{
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  button{
+    background-color:var(--purple) ;
+    color:var(--white) ;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .learn-from-the-pros{
+    /* position: absolute;
+    left: 604px;
+    top: 631px; */
+    /* width: 261px; */
+    height: 40px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .span4{
+    color: #C271FF;
+    font-weight: bold;
+    padding: 0;
+  }
+  
+  
+  /* Container for the pros section */
+  .pros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 20px; /* Adjust as necessary */
+  }
+  
+  /* Individual figure container */
+  .pros-fig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Image styling */
+  .pros-img {
+    border-radius: 50%;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image is contained */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  /* Name styling */
+  .pros-name {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px 0; /* Space above and below the name */
+  }
+  
+  /* Paragraph styling */
+  .pros-p {
+    width: 150px;
+    font-style: italic;
+    font-family: 'source sans pro';
+    margin: 0 auto; /* Center paragraph */
+    padding: 5px;
+  }
+  
+  /* quote */
+  .quote{
+    background-color:var(--purple);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+    height: 392px;
+    font-size: 22px;
+  }
+  .quote blockquote{
+    margin-bottom: 30px;
+  }
+  .quote p{
+    font-style: italic;
+  }
+  .quote div{
+    margin: 20px;
+  }
+  
+  /* Videos Section */
+  .videos {
+    padding: var(--padding);
+    background-color: var(--white)
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  /* Container for each video */
+  .videos-container > div {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  /* Container for the video image */
+  .img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .img img.video-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Position the play button over the image */
+  .img img.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Adjust size as necessary */
+    height: 50px; /* Adjust size as necessary */
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .video-paragraph {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .rate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rate img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .rate h4 {
+    font-size: 16px;
+  }
+  
+  .rate-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .star {
+    display: flex;
+  }
+  
+  .star div {
+    color: var(--purple);
+    margin-right: 5px;
+  }
+  
+  /* Membership Section */
+  .Membership {
+    position: relative;
+    width: 100%;
+    height: 502px; /* Adjust the height to match the original */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #071629; /* Dark background */
+    padding: 50px 0;
+  }
+  
+  .Membership .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #071629;
+    z-index: -1;
+  }
+  
+  .Membership h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .Membership h2 .highlight {
+    color: #C271FF; /* Purple color for "Free" */
+  }
+  
+  .membership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .membership-item {
+    /* background: rgba(255, 255, 255, 0.1); Semi-transparent white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .membership-item img {
+    width: 43.67px; /* Adjust the size to match the original */
+    height: 35.35px;
+    margin-bottom: 20px;
+  }
+  
+  .membership-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .membership-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  
+  .register-button {
+    background: #C271FF;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background: #A659DB; /* Slightly darker shade on hover */
+  }
+  
+  
+  .FAQ {
+    width: 920px;
+    margin: 0 auto;
+    text-align: center;
+    color: #071629;
+  }
+  
+  .FAQ h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  
+  .FAQ-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .grid-part {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .faq-header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #071629;
+    text-align: left;
+  }
+  
+  .faq-paragraph {
+    width: 350px;
+    color: rgba(7, 22, 41, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  
+  .grid-part div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* General Footer Styling */
+  footer{
+    height: 250px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: var(--padding);
+  }
+  
+  /* Background Styling */
+  /* .Background {
+    width: 1440px;
+    height: 249px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #071629;
+  } */
+  
+  /* Social Media Section Styling */
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    position: absolute;
+    left: 165px;
+    top: 95px;
+  }
+  
+  /* Logo Image Styling */
+  .Smileschool {
+    width: 169px; /* Adjust width as necessary */
+    height: 30px; /* Maintain aspect ratio */
+  }
+  
+  /* Social Media Icons Styling */
+  /* .SocialIcons {
+    display: flex;
+    gap: 15px;
+    align-items: left;
+  } */
+  
+  .social-icon {
+    margin-left: 20px;
+    background-color: var(--white);
+    color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    padding-top: 7px;
+  }
+  
+  /* Text Styling */
+  .Smileschool2020 {
+    position: relative;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.35;
+    text-align: center;
+    align-items: flex-end;
+  }
+  
+  /* Additional Styling for the Footer */
+  footer {
+    position: relative;
+    background: #071629;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  footer section {
+    position: relative;
+  }
+  
+  footer img {
+    max-width: 100px; /* Adjust the size of the logo as needed */
+  }
+  
+  footer p {
+    margin-top: 30px;
+    opacity: 0.5;
+    font-size: 14px;
+  }
+  
+  
