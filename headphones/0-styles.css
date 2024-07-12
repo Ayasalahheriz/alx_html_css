@@ -60,7 +60,7 @@
 
 .header {
     padding: 20px;
-    background-image: url(../images/headphones_hero_1.jpg);
+    background-image: url(./images/headphones_hero_1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 800px;
