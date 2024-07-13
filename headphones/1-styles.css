@@ -18,6 +18,10 @@
 }
 /* End Rules */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -29,9 +33,6 @@
 @media (max-width: 480px) {
     .container {
         width: 440px;
-        background-image: cover;
-        padding-left: 15px;
-        padding-left: 15px;
     }
 }
 
@@ -64,8 +65,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: fit-content;
+    height: fit-content; /* You might consider adjusting this based on your design needs */
 }
+
 
 .header .container {
     display: flex;
@@ -190,4 +192,54 @@ button:hover, button:active {
     line-height: 1.6;
     font-size: 16px;
     margin-top: 80px;
-;}
+}
+
+.intro3{
+    margin-top: 60px;
+}
+
+.intro3 p {
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+
+.service-content {
+    display: grid;
+    width: 1000px;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.col img {
+    margin: auto;
+    width: 60px;
+    height: 50px;
+}
+
+.col h4 {
+    font-size: 18px;
+}
+
+.col p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: auto auto 60px;
+    width: 200px;
+    max-width: 100%;
+}
