@@ -11,7 +11,22 @@
 /* font */
 @font-face {
     font-family: 'source sans pro'; 
-    src: url('fonts/SourceSansPro-Light.otf'); 
+    src: url('fonts/source-sans-pro/SourceSansPro-Black.otf'); 
+}
+
+@font-face {
+    font-family: 'source sans pro'; 
+    src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf'); 
+}
+
+@font-face {
+    font-family: 'source sans pro'; 
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf'); 
+}
+
+font-face {
+    font-family: 'source sans pro'; 
+    src: url('fonts/source-sans-pro/SourceSansPro-Light.otf'); 
 }
 
 /* Start Variables */
