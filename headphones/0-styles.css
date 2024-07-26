@@ -33,6 +33,9 @@ font-face {
 }
 /* End Rules */
 
+body {
+    font-family: 'SourceSansPro', sans-serif; /* Fallback font */
+}
 .container {
     /* padding-left: 15px; */
     padding-right: 15px;
@@ -142,7 +145,7 @@ a:hover, a:active {
 
 .intro h1 {
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     margin-top: 320px;
 }
