@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
+    /* -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 
 /* font */
@@ -33,60 +33,33 @@ font-face {
 }
 /* End Rules */
 
-html {
-    scroll-behavior: smooth;
+body {
+    font-family: 'SourceSansPro', sans-serif; /* Fallback font */
 }
-
 .container {
-    padding-left: 15px;
+    /* padding-left: 15px; */
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Small screens */
-@media (max-width: 480px) {
-    .container {
-        width: 440px;
-    }
-}
-
-/* Medium screens */
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-/* Large screens */
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-/* Extra large screens */
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
 
 
 
-.header {
+
+.header .background {
     padding: 20px;
     background-image: url(./images/headphones_hero_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: fit-content; 
+    height: fit-content;
+    /* width: 100%; */
 }
-
 
 .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -94,14 +67,8 @@ html {
     width: 200px;
 }
 
-@media (max-width: 480px) {
-    .header .logo {
-        align-content: center;
-    }
-}
 
 .header .links {
-    position: relative;
     display: grid;
     align-items: center;
 }
@@ -110,17 +77,19 @@ html {
 }
 
 .header .links .icon {
-    width: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    position: absolute;
+    left: 8%;
+    width: 25px;
+    height: 25px; /* Added height to make the icon visible */
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header .links .icon span {
-    background-color: #333;
+    background-color: white;
     margin-bottom: 5px;
     height: 2px;
-    display: none;
+    /* display: none; */
 }
 
 .header .links .icon span:first-child {
@@ -140,19 +109,29 @@ html {
     width: 100%;
 }
 
-.header .links ul {
-    display: flex;
+
+
+.header .links .large-view {
+    /* display: flex; */
+    list-style: none;
+}
+.header .links .small-view {
+    display:none;
     list-style: none;
 }
 
+
+
+
+
 a {
     color: white;
+    text-decoration: none;
 }
 
-.header .links ul li a{
+.header .links .large-view li a{
     display: block;
     padding: 15px;
-    text-decoration: none;
 }
 
 /* Links hover/active state */
@@ -161,15 +140,12 @@ a:hover, a:active {
 }
 
 .intro {
-    width: 600px;
-    max-width: 100%;
     text-align: center;
-    margin: auto;
 }
 
 .intro h1 {
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     margin-top: 320px;
 }
@@ -207,10 +183,12 @@ button:hover, button:active {
     line-height: 1.6;
     font-size: 16px;
     margin-top: 80px;
-}
+;}
+
+
 
 .intro3{
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .intro3 p {
@@ -218,23 +196,19 @@ button:hover, button:active {
     line-height: 1.6;
 }
 
-/* Start What */
-.service-content {
-    display: grid;
-    width: 1000px;
-    max-width: 100%;
+#what {
+    margin-top: 40px;
     text-align: center;
-    margin: auto;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
-    grid-gap: 20px;
 }
+
+
 
 
 
 .col {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 30px;
     justify-content: space-around;
     text-align: center;
     gap: 20px;
@@ -259,6 +233,8 @@ button:hover, button:active {
     max-width: 100%;
 }
 
+
+
 /* End What */
 /* start results */
 .results .container {
@@ -267,9 +243,7 @@ button:hover, button:active {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: auto;
     height: fit-content;
-    width: 100%;
 }
 
 .results h2 {
@@ -284,17 +258,7 @@ button:hover, button:active {
     font-size: 16px;
 }
 
-.second-content {
-    display: grid;
-    width: 1000px;
-    max-width: 100%;
-    text-align: center;
-    margin: auto auto 60px;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
-    grid-gap: 20px;
-    justify-content: space-around;
-    text-align: center;
-}
+
 
 .col2 {
     display: flex;
@@ -328,3 +292,158 @@ button:hover, button:active {
 }
 
 /* End results */
+
+/* Large screens */
+@media (min-width: 992px) {
+    .intro {
+        width: 637px;
+        margin: auto;
+    }
+    .links ul {
+        display: flex;
+    }
+    .links .icon {
+        display: none;
+    }
+    #menu-toggle {
+        display: none;
+      }
+
+      .service-content {
+        display: grid;
+        width: 1000px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        grid-gap: 20px;
+    }
+
+    /* .header .links .small-view {
+        display: none;
+    } */
+
+    .second-content {
+        display: grid;
+        width: 1000px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto auto 60px;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        grid-gap: 20px;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width:481px) and (max-width:991px) {
+    .intro {
+        width: 637px;
+        margin: auto;
+    }
+    .links .large-view {
+        display: flex;
+    }
+    .links .icon {
+        display: none;
+    }
+    #menu-toggle {
+        display: none;
+      }
+    
+      .service-content {
+        display: grid;
+        width: 1000px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .second-content {
+        display: grid;
+        width: 1000px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto auto 60px;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-gap: 20px;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    /* .header .links .small-view {
+        display: none;
+    } */
+}
+
+
+
+/* Small screens */
+@media (max-width: 480px) {
+    .header .container {
+        display: grid;
+    }
+    .intro {
+        width: 335px;
+        margin: auto;
+    }
+
+    .links .large-view {
+        display: none;
+    }
+    .header .logo {
+        margin: 50px auto;
+        width: 150px;
+    }
+
+    .links .icon {
+        display: flex;
+        position: absolute; /* Add absolute positioning */
+        top: 80px; /* Adjust top position as needed */
+        right: 20px; /* Adjust right position as needed   
+     */
+        cursor: pointer;
+      }
+    
+      .links .small-view {
+        display: none;
+        position: absolute; /* Add absolute positioning */
+        top: 130px; /* Adjust top position as needed */
+        right: 0;
+        width: 100%;
+        z-index: 999; /* Ensure menu is above other content */
+      }
+      #menu-toggle {
+        display: none;
+      }
+      #menu-toggle:checked ~ .small-view {
+        display: grid;
+        justify-content:space-around;
+        gap: 20px;
+      }
+    
+      .service-content {
+        display: grid;
+        width: 1000px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .second-content {
+        display: grid;
+        width: 1000px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto auto 60px;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        grid-gap: 15px;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
